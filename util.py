@@ -1,3 +1,5 @@
+import re
+
 # The regular expression for Emoji Unicode range, it cannot perfectly cover all the code point yet.
 # This list is also from other sites
 emoji_re=re.compile("["

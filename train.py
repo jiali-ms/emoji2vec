@@ -14,7 +14,7 @@ def train_model(debug=False):
     # normally set embedding size between 10-200
     # window size is range of context you would like to include
     # a wider range windows size will let the vector learn more about topic
-    model = Word2Vec(train, size=10, window=5, min_count=0, workers=4)
+    model = Word2Vec(train, size=50, window=5, min_count=0, workers=4)
     model.save('data/word2vec.bin')
     model.wv.save_word2vec_format('data/word2vec.txt', binary=False)
 
