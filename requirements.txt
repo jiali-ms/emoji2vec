@@ -1,0 +1,2 @@
+# emoji2vec requirements
+gensim>=2.3.0
