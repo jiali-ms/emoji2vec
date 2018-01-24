@@ -13,24 +13,26 @@ The zip file in the data folder is a 1M sentences with emoji from Twitter about 
 Run [train.py](https://github.com/jiali-ms/emoji2vec/blob/master/train.py) file. Don't forget to set correct parameters like vector size, windows size, etc. It will dump a model and a raw text file for the embedding. 
 ## Results
 Let's run the [model.py](https://github.com/jiali-ms/emoji2vec/blob/master/model.py) and see the console output. If you ever played word2vec before, you know the answer for the famous play **'King' - 'man' + 'woman' = ?** . Let check the results with our simple twitter data.
-> query + [**'king'**, **'woman'**] - [**'man'**]
+> query + [**'king'**, **'woman'**] - [**'man'**]  
 [(**'queen'**, 0.73), ('crown', 0.7), ('goddess', 0.7), ('princess', 0.7), ('actress', 0.69)]
 
->query + [**'china'**, **'tokyo'**] - [**'beijing'**]
+>query + [**'china'**, **'tokyo'**] - [**'beijing'**]  
 [(**'japan'**, 0.73), ('theatre', 0.69), ('europe', 0.68), ('nyc', 0.67), ('nuttiness', 0.67)]
 
->query + [**'dog'**, **'cats'**] - [**'dogs'**]
+>query + [**'dog'**, **'cats'**] - [**'dogs'**]  
 [(**'cat'**, 0.92), ('kitten', 0.75), ('puppy', 0.73), ('coworker', 0.71), ('mom', 0.69)]
 
 Finally, let's see how well we can find emoji by key words!
-> query + [**'cat'**] - []
+> query + [**'cat'**] - []  
 [('🐱', 0.66), ('🐶', 0.5), ('🐈', 0.47), ('🐰', 0.42), ('🐕', 0.4), ('🐭', 0.39)]
 
->query + [**'happy'**, **'new'**, **'year'**] - []
+>query + [**'happy'**, **'new'**, **'year'**] - []  
 [('🎉', 0.56), ('🎄', 0.38), ('🏆', 0.38), ('🍾', 0.37), ('🎁', 0.36)]
 
->query + [**'king'**, **'woman'**] - [**'man'**]
+>query + [**'king'**, **'woman'**] - [**'man'**]  
 [('👑', 0.63), ('👸', 0.59), ('🦁', 0.56)]
 
->query + ['💗'] - []
+>query + ['💗'] - []  
 [('💓', 0.94), ('💜', 0.92), ('💖', 0.92), ('💘', 0.91), ('💞', 0.91), ('💕', 0.91), ('💛', 0.81), ('💙', 0.81), ('💟', 0.79), ('💝', 0.72)]
+
+
