@@ -10,7 +10,10 @@ Check the site http://nlpfun.com/emoji for a preview of what we can do next with
 ##   Data 
 The zip file in the data folder is a 1M sentences with emoji from Twitter about 2017-Jan. It is randomly selected set from a much bigger corpus. Unzip the corpus.txt directly into the data folder for training. 
 ## Training
-Run [train.py](https://github.com/jiali-ms/emoji2vec/blob/master/train.py) file. Don't forget to set correct parameters like vector size, windows size, etc. It will dump a model and a raw text file for the embedding. 
+Run [train.py](https://github.com/jiali-ms/emoji2vec/blob/master/train.py) file. Don't forget to set correct parameters like vector size, windows size, etc. It will dump a model and a raw text file for the embedding.   
+
+Install the gensim first with python 3.5
+> pip install -r requirements.txt 
 ## Results
 Let's run the [model.py](https://github.com/jiali-ms/emoji2vec/blob/master/model.py) and see the console output. If you ever played word2vec before, you know the answer for the famous play **'King' - 'man' + 'woman' = ?** . Let check the results with our simple twitter data.
 > query + [**'king'**, **'woman'**] - [**'man'**]  
