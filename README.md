@@ -1,3 +1,4 @@
+
 # emoji2vec
 [<img src="https://github.com/jiali-ms/emoji2vec/blob/master/logo.png">](http://nlpfun.com/emoji)
 
@@ -42,4 +43,7 @@ Finally, let's see how well we can find emoji by key words!
 To better understanding what's going on inside, here are some recommendations:  
 https://blog.acolyer.org/2016/04/21/the-amazing-power-of-word-vectors/
 http://web.stanford.edu/class/cs224n/assignment1/index.html 
+
+## Visualization
+![Visualization in two dimension](https://github.com/jiali-ms/emoji2vec/blob/master/cluster.png)
 
