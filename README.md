@@ -1,4 +1,3 @@
-
 # emoji2vec
 [<img src="https://github.com/jiali-ms/emoji2vec/blob/master/logo.png">](http://nlpfun.com/emoji)
 
@@ -47,3 +46,5 @@ http://web.stanford.edu/class/cs224n/assignment1/index.html
 ## Visualization
 ![Visualization in two dimension](https://github.com/jiali-ms/emoji2vec/blob/master/cluster.png)
 
+## C++ Engine
+If you want to put this into your project, it is never hard to write a version in the language you prefer. The C++ demo loads the word embeddings from compressed code and work the same as python version.
